@@ -996,6 +996,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable button_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1088,6 +1089,7 @@ id direct
 id disableHome
 id edit_query
 id end
+id engButton
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1100,6 +1102,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id frnButton
 id ghost_view
 id gone
 id group_divider
@@ -1110,6 +1113,8 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView2
+id include
 id info
 id invisible
 id italic
@@ -1143,6 +1148,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id polButton
 id progress_circular
 id progress_horizontal
 id radio
@@ -1179,6 +1185,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id spaButton
 id spacer
 id split_action_bar
 id spread
@@ -1191,6 +1198,7 @@ id start
 id stretch
 id submenuarrow
 id submit_area
+id swdButton
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1200,6 +1208,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView2
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1302,8 +1311,16 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_main
+mipmap globe
+mipmap globe_foreground
+mipmap globe_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw english
+raw french
+raw polish
+raw spanish
+raw swedish
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1349,8 +1366,12 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string eng
+string eng_txt
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string frn
+string frn_txt
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
@@ -1358,8 +1379,14 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pol
+string pol_txt
 string search_menu_title
+string spa
+string spa_txt
 string status_bar_notification_info_overflow
+string swd
+string swd_txt
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

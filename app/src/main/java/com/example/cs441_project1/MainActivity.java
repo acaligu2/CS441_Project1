@@ -1,6 +1,7 @@
 package com.example.cs441_project1;
 
 import android.os.Bundle;
+import android.media.MediaPlayer;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,49 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final android.widget.TextView tv = findViewById(R.id.textView2);
+
+        final MediaPlayer englishSound = MediaPlayer.create(this, R.raw.english);
+        android.widget.Button englishButton = findViewById(R.id.engButton);
+
+        englishButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ englishSound.start(); tv.setText(R.string.eng_txt); }
+        });
+
+        final MediaPlayer spanishSound = MediaPlayer.create(this, R.raw.spanish);
+        android.widget.Button spanishButton = findViewById(R.id.spaButton);
+
+        spanishButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ spanishSound.start(); tv.setText(R.string.spa_txt); }
+        });
+
+        final MediaPlayer frenchSound = MediaPlayer.create(this, R.raw.french);
+        android.widget.Button frenchButton = findViewById(R.id.frnButton);
+
+        frenchButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ frenchSound.start(); tv.setText(R.string.frn_txt);}
+        });
+
+        final MediaPlayer swedishSound = MediaPlayer.create(this, R.raw.swedish);
+        android.widget.Button swedishButton = findViewById(R.id.swdButton);
+
+        swedishButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ swedishSound.start(); tv.setText(R.string.swd_txt);}
+        });
+
+        final MediaPlayer polishSound = MediaPlayer.create(this, R.raw.polish);
+        android.widget.Button polishButton = findViewById(R.id.polButton);
+
+        polishButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){ polishSound.start(); tv.setText(R.string.pol_txt);}
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
